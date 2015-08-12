@@ -1,0 +1,292 @@
+Mon AVERTISSEMENT: Client introuvable   GMT:28/6/2015 == 14:1:13 
+Mon AVERTISSEMENT: Client introuvable   GMT:28/6/2015 == 14:1:9 
+Mon AVERTISSEMENT: Client introuvable   GMT:28/6/2015 == 14:1:7 
+Mon AVERTISSEMENT: Client introuvable   GMT:28/6/2015 == 14:0:56 
+Mon AVERTISSEMENT: idClient introuvable   GMT:28/6/2015 == 12:7:44 
+erreur inconnu: Undefined variable: idClient   GMT:28/6/2015 == 12:7:44 
+erreur inconnu: Missing argument 1 for Client::supprimerClient(), called in C:\wamp\www\socle\test.php on line 58 and defined   GMT:28/6/2015 == 12:7:43 
+erreur inconnu: Undefined variable: l   GMT:28/6/2015 == 10:30:9 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:28:49 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:28:49 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:28:49 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:25:12 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:25:12 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:25:12 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:25:12 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:25:12 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:25:12 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:22:59 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:22:59 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:22:59 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:22:59 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:22:59 
+erreur inconnu: Uninitialized string offset: 0   GMT:28/6/2015 == 10:22:59 
+Mon AVERTISSEMENT: idClient introuvable   GMT:28/6/2015 == 10:19:27 
+erreur inconnu: Undefined variable: idClient   GMT:28/6/2015 == 10:19:27 
+erreur inconnu: Missing argument 1 for Client::lireClient(), called in C:\wamp\www\socle\test.php on line 51 and defined   GMT:28/6/2015 == 10:19:27 
+erreur inconnu: Undefined variable: objetClient   GMT:28/6/2015 == 10:5:50 
+erreur inconnu: Undefined variable: objetClient   GMT:28/6/2015 == 10:4:53 
+erreur inconnu: Undefined variable: idClient   GMT:25/6/2015 == 12:30:1 
+erreur inconnu: Undefined variable: idAdresse   GMT:25/6/2015 == 10:6:27 
+erreur inconnu: Undefined variable: idAdresse   GMT:25/6/2015 == 10:4:54 
+erreur inconnu: Undefined variable: idAdresse   GMT:25/6/2015 == 9:48:27 
+Mon AVERTISSEMENT: lien adresse non ajout�    GMT:25/6/2015 == 9:47:16 
+erreur inconnu: Undefined variable: idAdresse   GMT:25/6/2015 == 9:47:16 
+Mon AVERTISSEMENT: lien adresse non ajouté    GMT:22/6/2015 == 14:34:39 
+erreur inconnu: Undefined variable: idAdresse   GMT:22/6/2015 == 14:34:39 
+Mon AVERTISSEMENT: lien adresse non ajouté    GMT:22/6/2015 == 14:32:50 
+erreur inconnu: Undefined variable: idAdresse   GMT:22/6/2015 == 14:32:50 
+Mon AVERTISSEMENT: lien adresse non ajouté    GMT:22/6/2015 == 14:31:24 
+erreur inconnu: Undefined variable: idAdresse   GMT:22/6/2015 == 14:31:24 
+Mon AVERTISSEMENT: lien adresse non ajouté    GMT:22/6/2015 == 14:20:20 
+erreur inconnu: Undefined variable: idAdresse   GMT:22/6/2015 == 14:20:20 
+Mon AVERTISSEMENT: lien adresse non ajouté    GMT:22/6/2015 == 14:18:36 
+erreur inconnu: Undefined variable: idAdresse   GMT:22/6/2015 == 14:18:36 
+Mon AVERTISSEMENT: lien adresse non ajouté    GMT:22/6/2015 == 14:13:58 
+erreur inconnu: Undefined variable: idAdresse   GMT:22/6/2015 == 14:13:58 
+Mon AVERTISSEMENT: lien adresse non ajouté    GMT:22/6/2015 == 14:12:7 
+erreur inconnu: Undefined variable: idAdresse   GMT:22/6/2015 == 14:12:7 
+Mon AVERTISSEMENT: lien adresse non ajouté    GMT:22/6/2015 == 14:10:9 
+erreur inconnu: Undefined variable: idAdresse   GMT:22/6/2015 == 14:10:9 
+erreur inconnu: Undefined variable: j   GMT:22/6/2015 == 13:25:34 
+erreur inconnu: Undefined variable: j   GMT:22/6/2015 == 13:25:33 
+erreur inconnu: Undefined variable: j   GMT:22/6/2015 == 13:25:13 
+erreur inconnu: Undefined offset: 1   GMT:22/6/2015 == 13:18:41 
+erreur inconnu: Undefined offset: 1   GMT:22/6/2015 == 13:13:34 
+erreur inconnu: Undefined offset: 1   GMT:22/6/2015 == 13:9:43 
+erreur inconnu: Undefined offset: 1   GMT:22/6/2015 == 12:47:44 
+erreur inconnu: Undefined offset: 1   GMT:22/6/2015 == 12:47:4 
+erreur inconnu: Undefined offset: 1   GMT:22/6/2015 == 12:28:11 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 12:7:59 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 12:6:49 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 12:5:53 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 12:5:53 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 12:4:30 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 12:4:30 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 12:2:10 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 12:2:10 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 12:1:44 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 12:1:44 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 12:0:37 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 12:0:37 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:55:9 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 11:55:9 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 11:55:9 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:55:9 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:54:30 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 11:54:30 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 11:54:30 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:54:30 
+Mon AVERTISSEMENT: lien adresse non ajouté    GMT:21/6/2015 == 11:53:58 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:53:58 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 11:53:58 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 11:53:58 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:53:58 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:52:27 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 11:52:27 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 11:52:27 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:52:27 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:51:25 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 11:51:25 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 11:51:25 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:51:25 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:50:54 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 11:50:54 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 11:50:54 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:50:54 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:50:53 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 11:50:53 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 11:50:53 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:50:53 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:49:25 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 11:49:25 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 11:49:25 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:49:25 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:49:4 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 11:49:4 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 11:49:4 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:49:4 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:48:23 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 11:48:23 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 11:48:23 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 11:48:22 
+erreur inconnu: Use of undefined constant client - assumed 'client'   GMT:21/6/2015 == 11:39:56 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:11:14 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:11:14 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:11:14 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:11:14 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:11:14 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:11:14 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:10:28 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:10:28 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:10:28 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:10:28 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:10:28 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:10:28 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:9:42 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:9:42 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:9:42 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:9:42 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:9:42 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:9:42 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:8:44 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:8:44 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:8:44 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:8:44 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:8:44 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 11:8:44 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 11:2:47 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 11:2:1 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 11:0:24 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:58:24 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:57:16 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:56:2 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:55:35 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:55:35 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:55:35 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:55:35 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:55:35 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:55:35 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:55:35 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:53:32 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 10:53:32 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:53:32 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:53:32 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:53:32 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:53:32 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:53:32 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 10:53:32 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:53:32 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:52:39 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:52:39 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:52:39 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:52:39 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:52:39 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:52:39 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:52:39 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:51:0 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:50:59 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:50:59 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:50:59 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:50:59 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:50:59 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:50:59 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:49:31 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:49:31 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:49:31 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:49:31 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:49:31 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:49:31 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:49:31 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:44:44 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 10:44:44 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 10:44:44 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:43:55 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 10:43:55 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 10:43:55 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:42:4 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:42:4 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:42:4 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:42:4 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:42:4 
+erreur inconnu: Undefined offset: 0   GMT:21/6/2015 == 10:42:4 
+erreur inconnu: Undefined index: adresse   GMT:21/6/2015 == 10:40:53 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:40:24 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:39:47 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:38:24 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:36:30 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:35:15 
+erreur inconnu: Undefined variable: requeteAjouterAdresse   GMT:21/6/2015 == 10:35:15 
+erreur inconnu: Undefined variable: requeteAjouterAdresse   GMT:21/6/2015 == 10:35:15 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:34:31 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:33:0 
+erreur inconnu: Undefined variable: requeteAjouterAdresse   GMT:21/6/2015 == 10:33:0 
+erreur inconnu: Undefined variable: requeteAjouterAdresse   GMT:21/6/2015 == 10:33:0 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:31:26 
+erreur inconnu: Undefined variable: requeteAjouterAdresse   GMT:21/6/2015 == 10:31:26 
+erreur inconnu: Undefined variable: requeteAjouterAdresse   GMT:21/6/2015 == 10:31:26 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: requeteAjouterAdresse   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: requeteAjouterAdresse   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: pays   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: commune   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: codePostal   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: cpltVoie   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: nomVoie   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: pays   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: commune   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: codePostal   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: cpltVoie   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined index: cit� des jasmin   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: nomVoie   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Undefined variable: numVoie   GMT:21/6/2015 == 10:29:59 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:25:8 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:23:39 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:23:5 
+erreur inconnu: Undefined index: codePostal   GMT:21/6/2015 == 10:23:5 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:19:54 
+erreur inconnu: Undefined variable: nbrLigne   GMT:21/6/2015 == 10:15:7 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:15:7 
+erreur inconnu: Undefined variable: nbrLigne   GMT:21/6/2015 == 10:14:14 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:14:14 
+erreur inconnu: Undefined variable: nbrLigne   GMT:21/6/2015 == 10:12:53 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:12:53 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:10:7 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:9:26 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:26 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:26 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:26 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:26 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:26 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:9:12 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:12 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:12 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:12 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:12 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:12 
+erreur inconnu: Undefined index: $i   GMT:21/6/2015 == 10:9:12 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:8:17 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:7:20 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:6:16 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:6:16 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:6:16 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:6:16 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:6:16 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:6:16 
+erreur inconnu: Undefined index:    GMT:21/6/2015 == 10:6:16 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:5:23 
+erreur inconnu: Undefined index: pays   GMT:21/6/2015 == 10:5:23 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 10:5:23 
+erreur inconnu: Undefined index: codePostal   GMT:21/6/2015 == 10:5:23 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 10:5:23 
+erreur inconnu: Undefined index: nomVoie   GMT:21/6/2015 == 10:5:23 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 10:3:34 
+erreur inconnu: Undefined index: pays   GMT:21/6/2015 == 10:3:33 
+erreur inconnu: Undefined index: commune   GMT:21/6/2015 == 10:3:33 
+erreur inconnu: Undefined index: codePostal   GMT:21/6/2015 == 10:3:33 
+erreur inconnu: Undefined index: cpltVoie   GMT:21/6/2015 == 10:3:33 
+erreur inconnu: Undefined index: nomVoie   GMT:21/6/2015 == 10:3:33 
+erreur inconnu: Undefined index: numVoie   GMT:21/6/2015 == 10:3:33 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:53:29 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:53:13 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:49:25 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:45:32 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:45:8 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:45:8 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:44:37 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:44:37 
+erreur inconnu: Undefined variable: idClient   GMT:21/6/2015 == 9:40:53 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:40:53 
+erreur inconnu: Undefined variable: idClient   GMT:21/6/2015 == 9:40:53 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:35:35 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:30:13 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:27:0 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:26:58 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:26:57 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:26:55 
+erreur inconnu: Use of undefined constant requeteAjouterLienClientAdresse - assumed 'requeteAjouterLienClientAdresse'   GMT:21/6/2015 == 9:25:14 
+erreur inconnu: Undefined variable: dateEnregistrementClient   GMT:21/6/2015 == 9:20:45 
