@@ -29,7 +29,7 @@
 */
 	
 	$adressesClient = array(
-    array("numVoie" => "92", "nomVoie" => "cite des jasmin","cpltVoie" => "ffoo", "codePostal" => "1300", "commune" => "tlemcen","pays" => ""),
+    array("statutActif" => "92", "typeEnvoi" => "cite des jasmin","intituleProduit" => "ffoo", "expediteurID" => "1300", "distinataireID" => "tlemcen", "dateEnvoi" => ""),
     array("numVoie" => "12", "nomVoie" => "1cite des jasmin", "cpltVoie" => "iov", "codePostal" => "2300", "commune" => "oran", "pays" => "1algerie21"),
     array("numVoie" => "222", "nomVoie" => "2citef des jasmin", "cpltVoie" => "iov", "codePostal" => "2300", "commune" => "paris", "pays" => "fr")
 	);

@@ -7,7 +7,7 @@
 	* Auteurs: Ilyes BENABDALLAH / Wafaa KAZI AOUEL                                *
 	*******************************************************************************/
 
-	class actif
+	class Actif
 	{
 		/*
 		La fonction creerActif : cette fonction permet de créer un actif, 
@@ -22,37 +22,38 @@
 				for($i = 0; $i < count($actif); ++$i)
 				{
 					$statutActif[$i]=$actif[$i]['statutActif'];
-					$typeEnvoi[$i]= $actif[$i]['typeEnvoi'];//int
+					$typeEnvoi[$i]= $actif[$i]['typeEnvoi'];
 					$intituleProduit[$i]= $actif[$i]['intituleProduit'];
+					$infoProduit[$i]= $actif[$i]['infoProduit'];
+					
+					$expediteurID[$i]= $actif[$i]['expediteurID'];
+					$distinataireID[$i]= $actif[$i]['distinataireID'];
+					$dateEnvoi[$i]= $actif[$i]['dateEnvoi'];
 					
 					$ran= rand (1000,9999);
-					$typeEnvoi[$i] = substr($typeEnvoi[$i], 0, 3); 
-					$intituleProduit[$i] = substr($intituleProduit[$i], 0, 3); 
-					$codeProduit[$i]= $typeEnvoi[$i].$ran.$intituleProduit[$i];
+					//$typeEnvoi[$i] = substr($typeEnvoi[$i], 0, 3); 
+					//$typeEnvoi[$i] = "esp"; 
+					//$intituleProduit[$i] = substr($intituleProduit[$i], 0, 3); 
+					$codeProduit[$i]= $idCommande.$typeEnvoi[$i].$ran;
 					
-					$verifierActif=mysql_query("SELECT actif.actifID FROM actif WHERE codeProduit = '$codeProduit[$i]' ") or die(mysql_error());
-					$actifExiste=mysql_num_rows($verifierActif);
+					//$verifierActif=mysql_query("SELECT actif.actifID FROM actif WHERE codeProduit = '$codeProduit[$i]' ") or die(mysql_error());
+					//$actifExiste=mysql_num_rows($verifierActif);
 						
-					if($actifExiste== null)
-					{
+					//if($actifExiste== null)
+					//{
 							
-						$requeteAjouterActif1= mysql_query("INSERT INTO actif(statut,codeProduit,commandeID) VALUES('statutActif[$i]', '$codeProduit[$i]',$idCommande") or die(mysql_error());
-						$idActif[$i]=mysql_insert_id();
+					$requeteAjouterActif= mysql_query("INSERT INTO actif(statut, type, codeProduit, intituleProduit, infoProduit, expediteurID, distinataireID, commandeID, dateEnvoi) VALUES('$statutActif[$i]', '$typeEnvoi[$i]', '$codeProduit[$i]', '$intituleProduit[$i]', '$infoProduit[$i]', '$expediteurID[$i]', '$distinataireID[$i]', '$idCommande', '$dateEnvoi[$i]')") or die(mysql_error());
+					//$idActif[$i]=mysql_insert_id();
+					//$idActif[$i]=mysql_insert_id();
+					$idActif=mysql_insert_id();
 						
-					}
-					else
-					{
-						while($actif=mysql_fetch_array($verifierActif))
-						{
-							$actifID= $actif['actifID'];
-							$idActif[$i]=$actifID;
-			
-						}
-						
-					}
+					//}
+					
+					
 		
 				}
-				
+				// appler fonction message information 
+				return $idActif;
 
 			}
 			//fin de la fonction creerActif()
@@ -187,11 +188,31 @@
 					
 					if ( $num_rows != NULL ) 
 					{
-					
 						//suppimer l'actif 
 						$delete=mysql_query('DELETE FROM actif WHERE actifID='.$idActif);
+						
+						//supprimer l'actif de la table suiviactif
+						//chercher si l'actif existe dans la table suiviActif
+						$requeteSuivi=mysql_query('SELECT * FROM suiviactif WHERE actifID='.$idActif) or die('Erreur Select idActif dans suiviActif'.mysql_error());
+						
+						//Retourner le nombre de ligne
+						$num_rowsActif = mysql_num_rows($requete);
+						
+						if ( $num_rows != NULL ) 
+						{
+							//lancer la requete de suppression de l'actif dans la table suiviActif
+							$requeteSuppActif=mysql_query('DELETE FROM suiviactif WHERE actifID='.$idActif)or die('Erreur Delete idActif dans suiviActif'.mysql_error());;
+						}
+						//nombre de ligne==0 => pas d'actif dans la table suivi actif
+
+						
+						
 						$message="Actif supprimé";
 						return $message;
+						
+						
+						
+						
 					}
 					//sinon le nombre de ligne ==0
 					else

@@ -1,4 +1,5 @@
-﻿<?php
+<?php ob_start(); ?>
+<?php
 	session_start();
 	
 	include('inc/login.php');
@@ -8,7 +9,7 @@
 	//include('socle/erreur.php');
 
 	include('config/bd.php');
-	include('socle/espacePrive.php');
+	include('socle/EspacePrive.php');
 	include('socle/Clients.php');
 ?>
 
@@ -135,3 +136,4 @@
 </body>
 
 </html>
+<?php ob_flush(); ?>

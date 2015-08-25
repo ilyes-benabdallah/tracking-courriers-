@@ -1,24 +1,25 @@
-<?php
+ï»¿<?php
 	/*******************************************************************************
-	* Eurequat Algérie                                                             *
+	* Eurequat AlgÃ©rie                                                             *
 	* Socle - Gestion des adresses                                                 *
 	* Version: 1.0                                                                 *
 	* Date:    21 - 06 - 2015                                                      *
 	* Auteur:  Ilyes BENABDALLAH                                                   *
 	*******************************************************************************/
-
+	include("socle/Contact.php");
 	class Adresse 
 	{
 
 		/*
 		La fonction creerAdresseExpediteur :
-		En entrée: tableau des adresses du client + l'dentifiant technique du client
+		En entrÃ©e: tableau des adresses du client + l'dentifiant technique du client
 		En sortie: null
 		*/
-		function creerAdresseExpediteur($adressesClient ,$idClient)
+		function creerAdresseExpediteur($adressesClient ,$idClient, $intitule)
 		{
+		$objectContact = new Contact();
 			$idAdresse=array();
-			$verifierAdresse= self::verifierAdresse($adressesClient);
+			$verifierAdresse= $objectContact->verifierAdresse($adressesClient);
 			if($verifierAdresse==0) echo("adresse incorrect");
 			//$nbrLigne = count($adressesClient);
 			$i=0;
@@ -32,7 +33,14 @@
 				$cpltVoie[$i]= $adressesClient[$i]['cpltVoie'];
 				$codePostal[$i]= $adressesClient[$i]['codePostal'];
 				$commune[$i]= $adressesClient[$i]['commune'];
-				$pays[$i]= $adressesClient[$i]['pays'];
+				$pays[$i]= $adressesClient[$i]['pays'];	
+				
+				$numVoie[$i]= mysql_real_escape_string($numVoie[$i]);
+				$nomVoie[$i]= mysql_real_escape_string($nomVoie[$i]);
+				$cpltVoie[$i]= mysql_real_escape_string($cpltVoie[$i]);
+				$codePostal[$i]= mysql_real_escape_string($codePostal[$i]);
+				$commune[$i]= mysql_real_escape_string($commune[$i]);
+				$pays[$i]= mysql_real_escape_string($pays[$i]);
 				
 				
 				$verifierAdresse=mysql_query("SELECT adresse.adresseID FROM adresse WHERE numVoie = '$numVoie[$i]' and nomVoie = '$nomVoie[$i]' and commune = '$commune[$i]' and pays = '$pays[$i]'") or die(mysql_error());
@@ -58,24 +66,111 @@
 	
 			}
 			
-			$ajouterLienClientAdresse=self::creerLienClientAdresse($idAdresse ,$idClient,'expediteur');
+			
+			$infoClientQuery = mysql_query("SELECT * FROM client WHERE clientID= '$idClient'") or die(mysql_error());
+			$infoClient = mysql_fetch_assoc($infoClientQuery);
+		
+			$nom =$infoClient['nom'];
+			$prenom =$infoClient['nom'];
+			$email =$infoClient['email'];
+			
+			if(($infoClient['telMobile'])!= '')
+			{
+				$numTelephone =$infoClient['telMobile'];
+			}
+			elseif(($infoClient['telFixe'])!='')
+			{
+				$numTelephone =$infoClient['telFixe'];
+			}
+			else $numTelephone =$infoClient['telMobile'];
+			
+			$intitule = mysql_real_escape_string($intitule);
+			
+			
+			$ajouterConatct=$objectContact->creerContact($idAdresse ,$idClient,'expediteur' , $nom, $prenom, $intitule, $mail, $numTelephone);
+
+			
+		}// fin function CreerAdresse
+		
+		
+		/*
+		La fonction creerAdresseDistinataire :
+		En entrÃ©e: tableau des adresses d'un contact client + l'dentifiant technique du client
+		En sortie: null
+		*/
+		function creerAdresseDistinataire($adressesClient ,$idClient, $nom, $prenom, $intitule, $email, $numTelephone)
+		{
+				$objectContact= new Contact();
+				
+				$nomContact= $nom;
+				$prenomContact= $prenom;
+				$intitueContact= $intitule;
+				$mailContact= $email;
+				$numTelephoneContact= $numTelephone;
+				$numVoie= $adressesClient['numVoie'];
+				$nomVoie= $adressesClient['nomVoie'];
+				$cpltVoie= $adressesClient['cpltVoie'];
+				$codePostal= $adressesClient['codePostal'];
+				$commune= $adressesClient['commune'];
+				$pays= $adressesClient['pays'];
+				
+				
+				
+			
+				$nomContact= mysql_real_escape_string($nomContact);
+				$prenomContact= mysql_real_escape_string($prenomContact);
+				$intitueContact= mysql_real_escape_string($intitueContact);
+				$mailContact= mysql_real_escape_string($mailContact);
+				$numTelephoneContact= mysql_real_escape_string($numTelephoneContact);
+				$numVoie= mysql_real_escape_string($numVoie);
+				$nomVoie= mysql_real_escape_string($nomVoie);
+				$cpltVoie= mysql_real_escape_string($cpltVoie);
+				$codePostal= mysql_real_escape_string($codePostal);
+				$commune= mysql_real_escape_string($commune);
+				$pays= mysql_real_escape_string($pays);
+				
+				
+				$verifierAdresse=mysql_query("SELECT adresse.adresseID FROM adresse WHERE numVoie = '$numVoie' and nomVoie = '$nomVoie' and commune = '$commune' and pays = '$pays'") or die(mysql_error());
+				$adresseExiste=mysql_num_rows($verifierAdresse);
+					
+				if($adresseExiste== null)
+				{
+						
+					$requeteAjouterAdresse1= mysql_query("INSERT INTO adresse(numVoie, nomVoie, cpltVoie, codePostal, commune, pays) VALUES('$numVoie', '$nomVoie', '$cpltVoie', '$codePostal', '$commune', '$pays') ") or die(mysql_error());
+					$idAdresse=mysql_insert_id();
+					
+				}
+				else
+				{
+					while($adresses=mysql_fetch_array($verifierAdresse))
+					{
+						$adresseID= $adresses['adresseID'];
+						$idAdresse=$adresseID;
+		
+					}
+					
+				}
+	
+		
+			
+			$ajouterConatct=$objectContact->creerContact($idAdresse ,$idClient,'distinataire' , $nom, $prenom, $intitule, $mail, $numTelephone);
 
 			
 		}// fin function CreerAdresse
 		
 				/*
 		La fonction modifierAdresse :
-		En entrée: tableau des adresses du client + l'dentifiant technique du client
+		En entrÃ©e: tableau des adresses du client + l'dentifiant technique du client
 		En sortie: null
 		*/
-		function modifierAdresse($adressesClient ,$idAdresse)
+		function modifierAdresse($adressesClient ,$idAdresse, $nom, $prenom, $intitule, $email, $numTelephone, $idContact)
 		{
 			$idAdresse=mysql_real_escape_string($idAdresse);
 			$verfierAdresse=mysql_query("SELECT * FROM adresse WHERE adresseID ='$idAdresse'") or die(mysql_error());
 			$existeAdresse= mysql_num_rows($verfierAdresse);
 			if($existeAdresse !=0)
 			{
-
+				$objectContact= new Contact();
 				$numVoie= $adressesClient['numVoie'];
 				$nomVoie= $adressesClient['nomVoie'];
 				$cpltVoie= $adressesClient['cpltVoie'];
@@ -86,7 +181,7 @@
 				if ($nomVoie!='' and $commune!='' and $pays!='')
 				{
 					
-					$verifierAdresse=mysql_query("SELECT adresse.adresseID FROM adresse WHERE adresseID='$idAdresse' and numVoie = '$numVoie[$i]' and nomVoie = '$nomVoie[$i]' and commune = '$commune[$i]' and pays = '$pays[$i]'") or die(mysql_error());
+					$verifierAdresse=mysql_query("SELECT adresse.adresseID FROM adresse WHERE adresseID !='$idAdresse' and numVoie = '$numVoie' and nomVoie = '$nomVoie' and commune = '$commune' and pays = '$pays'") or die(mysql_error());
 					$adresseExiste=mysql_num_rows($verifierAdresse);
 						
 					if($adresseExiste=0)
@@ -97,17 +192,16 @@
 						SET numVoie='$numVoie', nomVoie='$nomVoie', cpltVoie= '$cpltVoie', codePostal= '$codePostal', commune= '$commune', pays= '$pays'
 						WHERE adresseID = $idAdresse 		
 						") or die(mysql_error());
-						
+						$ajouterConatct=$objectContact->modifierContact($idContact, $nom, $prenom, $intitule, $email, $numTelephone);
 						return $idAdresse;
 						
 					}
 					else
 					{
-						while($adresses=mysql_fetch_array($verifierAdresse))
-						{
-							trigger_error("Cette adresse existe déja dans la base de données ");
+						
+							trigger_error("Cette adresse existe dÃ©ja dans la base de donnÃ©es ");
 			
-						}
+						
 						
 					}
 				}
@@ -126,7 +220,7 @@
 		
 		/*
 		La fonction supprimerAdresse :
-		En entrée: id adresse
+		En entrÃ©e: id adresse
 		En sortie:
 		*/
 		function supprimerAdresse($idAdresse , $idClient)
@@ -164,7 +258,7 @@
 					if($existeLienClientAdresse ==0)
 					{
 						$deleteAdresse=mysql_query("DELETE FROM adresse WHERE adresseID='$idAdresse'");
-						$message="Adresse supprimé";
+						$message="Adresse supprimÃ©";
 						return $message;
 					}
 					
@@ -185,7 +279,7 @@
 		}// fin function 
 		
 		/*La fonction verifierAdresse :
-		En entrée: tableau des adresses du client
+		En entrÃ©e: tableau des adresses du client
 		En sortie: 0 --> adresse non correcte et 1 --> adresse correcte
 		*/
 		function verifierAdresse($adressesClient)
@@ -200,10 +294,10 @@
 				$commune[$i]= $adressesClient[$i]['commune'];
 				$pays[$i]= $adressesClient[$i]['pays'];
 				
-				if ($nomVoie=='' or $commune=='' or $pays=='') // vérifier l'adresse (les champs obligatoires)
+				if ($nomVoie=='' or $commune=='' or $pays=='') // vÃ©rifier l'adresse (les champs obligatoires)
 				{
 					return 0;
-					trigger_error("lien cleint adresse non ajouté ");
+					trigger_error("lien cleint adresse non ajoutÃ© ");
 					exit;
 						
 				}
@@ -216,51 +310,8 @@
 			
 		}// fin function verifierAdresse
 		
-//--------------------------------------------------------------------------------------------- lien adresse-client	----------------------------------------------------------------	
-		/*
-		La fonction CreerLienClientAdresse :
-		En entrée: tableau des adresses du client + l'identifiant technique du client
-		En sortie: null
-		*/
-		function creerLienClientAdresse($idAdresse ,$idClient)
-		{
-			
-			
-			for($j = 0; $j < count($idAdresse); ++$j)
-			{
-				$verifierLienClientAdresse=mysql_query("SELECT * FROM contact WHERE adresseID= '$idAdresse[$j]' and clientID='$idClient'") or die(mysql_error());
-				$existeLienClienAdresse=mysql_num_rows($verifierLienClientAdresse);
-				
-				if($existeLienClienAdresse==0)
-				{
-					$requeteAjouterLienClientAdresse[$j]= mysql_query("INSERT INTO contact (clientID, adresseID) VALUES ('$idClient', '$idAdresse[$j]')") or die(mysql_error());
 
-				}
-		
-			}
-			
-		}// fin function CreerLienClientAdresse
-	
-			
 
-		/*
-		La fonction supprimerLienClientAdresse :
-		En entrée: tableau des adresses du client + l'identifiant technique du client
-		En sortie: null
-		*/
-		function supprimerLienClientAdresse($idLienClientAdresse)
-		{
-			$idLienClientAdresse=mysql_real_escape_string($idLienClientAdresse);
-			$verifierLienClientAdresse=mysql_query("SELECT * FROM contact WHERE lienClientAdresseID= '$idLienClientAdresse'") or die(mysql_error());
-			$existeLienClienAdresse=mysql_num_rows($verifierLienClientAdresse);
-			
-			if($existeLienClienAdresse!=0)
-			{
-				$supprimerLienClientAdresse=mysql_query("DELETE FROM contact WHERE lienClientAdresseID= '$idLienClientAdresse'") or die(mysql_error());
-		
-			}
-			
-		}// fin function supprimerLienClientAdresse
 		
 	} // fin class Adresse 
 

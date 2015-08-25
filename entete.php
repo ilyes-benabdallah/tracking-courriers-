@@ -1,6 +1,7 @@
-﻿<?php
+<?php
 session_start();
 
+include('config/bd.php');
 include('inc/login.php');
 $objetLogin = new Login();
 $objetLogin -> versLogin();
@@ -46,6 +47,8 @@ $objetLogin -> versLogin();
     <script src="assets/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <!--script src="test.js"></script-->
 	<script src="assets/jquery.min.js"></script>
+	
+	
 	<style>
 	#msform input, #msform textarea {
     padding: 5px!important;

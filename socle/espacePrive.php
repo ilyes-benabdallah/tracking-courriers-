@@ -1,7 +1,7 @@
-<?php
+ï»¿<?php
 	/*******************************************************************************
-	* Eurequat Algérie                                                             *
-	* Socle - Gestion des espaces privé                                                  *
+	* Eurequat AlgÃ©rie                                                             *
+	* Socle - Gestion des espaces privÃ©                                            *
 	* Version: 1.0                                                                 *
 	* Date:    21 - 06 - 2015                                                      *
 	* Auteur:  Ilyes BENABDALLAH                                                   *
@@ -10,8 +10,8 @@
 	class EspacePrive 
 	{
 		/*
-		La fonction creerEspace : cette fonction permet de créer un nouveau client, 
-		En entrée: informations de l'espace prive
+		La fonction creerEspace : cette fonction permet de crÃ©er un nouveau client, 
+		En entrÃ©e: informations de l'espace prive
 		En sortie: id espace prive
 		*/
 		function creerEspace($identifiant, $motDePasse, $sphere)
@@ -25,7 +25,7 @@
 				if ($motDePasse != Null)
 				{
 				
-					//vérifier si l'identifiant existe dans la bdd
+					//vÃ©rifier si l'identifiant existe dans la bdd
 					$reqIdentifiant=mysql_query('SELECT * FROM espace_prive WHERE identifiant="'.$identifiant.'"') or die(mysql_error());
 					//Retourner le nombre de ligne 
 					$numIdentifiant=mysql_num_rows($reqIdentifiant);
@@ -38,7 +38,7 @@
 											")or die('Erreur SQL !<br>'.mysql_error());
 											
 						//Retourner un message 
-						$espace="Espace créé";
+						$espace="Espace crÃ©Ã©";
 						return $espace;
 					}
 					//identifiant existe dans la bdd
@@ -68,8 +68,8 @@
 	
 		/*
 		La fonction lireEspace : fonction permet d'afficher les informations de l'espace
-		En entrée: id espace 	
-		En sortie: tableau l'espace privé
+		En entrÃ©e: id espace 	
+		En sortie: tableau l'espace privÃ©
 		*/
 		function lireEspace($idEspace)
 		{			
@@ -84,7 +84,7 @@
 				//Tester si le nombre de ligne > 0 
 					if ( $num_rows != NULL ) 
 					{
-						//retourner le résultat de la requete dans un tableau "$espace"
+						//retourner le rÃ©sultat de la requete dans un tableau "$espace"
 						$espace=mysql_fetch_assoc($requete);
 						return $espace; 
 					}
@@ -109,9 +109,9 @@
 		
 	
 		/*
-		La fonction existeEspace : fonction permet de virifier l'existance de l'espace privé
-		En entrée: id espace 	
-		En sortie: tableau l'espace privé
+		La fonction existeEspace : fonction permet de virifier l'existance de l'espace privÃ©
+		En entrÃ©e: id espace 	
+		En sortie: tableau l'espace privÃ©
 		*/
 		function existeEspace($identifiant, $motDePasse)
 		{			
@@ -154,7 +154,7 @@
 	
 		/*
 		La fonction modifierEspace :
-		En entrée:information client
+		En entrÃ©e:information client
 		En sortie: tableau espaceModifier
 		*/
 		function modifierEspace($idEspace,$identifiant,$motDePasse,$sphere) //------------------------------- erreur 
@@ -165,10 +165,10 @@
 			$motDePasse=md5($motDePasse);
 			$sphere=mysql_real_escape_string($sphere);
 			
-			//vérifier que l'idEspace n'est pas null
+			//vÃ©rifier que l'idEspace n'est pas null
 			if ($idEspace != NULL)
 			{
-				//vérifier que l'idEspace existe dans la bdd
+				//vÃ©rifier que l'idEspace existe dans la bdd
 			    $requeteEspace=mysql_query('SELECT * FROM espace_prive WHERE espacePriveID='.$idEspace) or die('1'.mysql_error());
 				
 				//Retourner le nombre de ligne 
@@ -177,13 +177,13 @@
 				//l'espace existe dans la bdd
 				if($numEspace !=NULL)
 				{	
-					//vérification du mot de passe
+					//vÃ©rification du mot de passe
 					if ($motDePasse !=NUll)
 					{	
-						//Vérification de l'identifiant 
+						//VÃ©rification de l'identifiant 
 						if($identifiant != NULL)
 						{
-							//vérifier que le nouveau identifiant n'existe pas dans la bdd
+							//vÃ©rifier que le nouveau identifiant n'existe pas dans la bdd
 							$requete=mysql_query('SELECT * FROM espace_prive WHERE identifiant="'.$identifiant.'"') or die(mysql_error());
 							
 							//retourner le nombre de ligne
@@ -194,8 +194,8 @@
 							{
 								//Requete de modification
 								$requeteModif=mysql_query('UPDATE espace_prive SET identifiant="'.$identifiant.'",motDePasse="'.$motDePasse.'",sphere="'.$sphere.'" WHERE espacePriveID='.$idEspace)or die('3'.mysql_error());
-								//retourner un message de succès 
-								$message='espace modifié';
+								//retourner un message de succÃ¨s 
+								$message='espace modifiÃ©';
 								return $message;
 							}
 							
@@ -224,8 +224,8 @@
 				//l'espace n'existe pas dans la bdd
 				else
 				{
-					// trigger_error("Espace privé n'existe pas dans la bdd");
-					echo("Espace privé n'existe pas dans la bdd");
+					// trigger_error("Espace privÃ© n'existe pas dans la bdd");
+					echo("Espace privÃ© n'existe pas dans la bdd");
 				}
 			
 			}
@@ -240,13 +240,13 @@
 	
 		/*
 		La fonction supprimerEspace :
-		En entrée: idEspace
+		En entrÃ©e: idEspace
 		En sortie: message de sortie
 		*/
 		function supprimerEspace($idEspace)
 		{
 			$idEspace=mysql_real_escape_string($idEspace);
-			//Tester si l'espace privé existe dans la bdd
+			//Tester si l'espace privÃ© existe dans la bdd
 			if( $idEspace != null)
 			{
 				//selectionner l'espace pour tester si il existe dans la bdd 
@@ -260,8 +260,8 @@
 					{
 						//Requete suppimer l'espace 
 						$delete=mysql_query('DELETE FROM espace_prive WHERE espacePriveID='.$idEspace);
-						//retourner un message de succès 
-						$message="Espace privé supprimé";
+						//retourner un message de succÃ¨s 
+						$message="Espace privÃ© supprimÃ©";
 						return $message;
 					}
 					//sinon le nombre de ligne ==0

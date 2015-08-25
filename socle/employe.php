@@ -1,18 +1,18 @@
-<?php
+ï»¿<?php
 	/*******************************************************************************
-	* Eurequat Algérie                                                             *
+	* Eurequat AlgÃ©rie                                                             *
 	* Socle - Gestion des employes                                                 *
 	* Version: 1.0                                                                 *
 	* Date:    30 - 06 - 2015                                                      *
-	* Auteur:  wafaa KAZI AOUEL                                                   *
+	* Auteur:  Ileys BENABDALLAH / wafaa KAZI AOUEL                                *
 	*******************************************************************************/
 
-	class employe 
+	class Employe 
 	{
 	/*
-	La fonction creerEmploye : cette fonction permet de créer un nouveau employes, 
-	En entrée: informations de l'employes
-	En sortie: message de succès
+	La fonction creerEmploye : cette fonction permet de crÃ©er un nouveau employes, 
+	En entrÃ©e: informations de l'employes
+	En sortie: message de succÃ©s
 	*/
 		function creerEmploye($nomEmploye, $prenomEmploye, $emailEmploye,$telMobileEmploye,$telFixeEmploye,$telFaxEmploye,$civiliteEmploye)
 		{
@@ -25,7 +25,7 @@
 			$telFaxEmploye=mysql_real_escape_string($telFaxEmploye);
 			$civiliteEmploye=mysql_real_escape_string($civiliteEmploye);
 			
-			if($nomEmploye=='' or $prenomEmploye=='' or $emailEmploye=='' ) // vérification des entrées (obligatoire)
+			if($nomEmploye=='' or $prenomEmploye=='' or $emailEmploye=='' ) // vÃ©rification des entrÃ©es (obligatoire)
 			{
 				echo("Veuillez remplir les champs obligatoires!"); 
 				exit;
@@ -36,22 +36,22 @@
 				$existeEmploye=mysql_num_rows($verifierEmploye);
 				if( $existeEmploye != null)
 				{
-					echo("Cet Employe existe déja dans la base des donnees");
+					echo("Cet Employe existe dÃ©ja dans la base des donnees");
 				}
 				else
 				{
-					$requeteAjouterEmploye= mysql_query("INSERT INTO employe (nom, prenom, email, telMobile, telFixe, telFax, civilite) VALUES ('$nomEmploye', '$prenomEmploye', '$emailEmploye',$telMobileEmploye,$telFixeEmploye,$telFaxEmploye,'$civiliteEmploye') ") or die('Error Ajout'.mysql_error());
-					if($requeteAjouterEmploye) // vérifier ajout de l'employe 
+					$requeteAjouterEmploye= mysql_query("INSERT INTO employe (nom, prenom, email, telMobile, telFixe, telFax, civilite) VALUES ('$nomEmploye', '$prenomEmploye', '$emailEmploye', '$telMobileEmploye', '$telFixeEmploye', '$telFaxEmploye', '$civiliteEmploye') ") or die('Error Ajout'.mysql_error());
+					if($requeteAjouterEmploye) // vÃ©rifier ajout de l'employe 
 					{
 						
-						$message='Employe ajouté';
+						$message='Employe ajoutÃ©';
 						return $message;
 						
 					}
 					else
 					{
-						// erreur Employe non ajouté 
-						trigger_error("lien employe non ajouté ");
+						// erreur Employe non ajoutÃ© 
+						trigger_error("lien employe non ajoutÃ© ");
 					}
 				}
 			
@@ -62,23 +62,23 @@
 		
 	/*
 	La fonction lireEmploye : cette fonction permet de lire les informations d'un employe
-	En entrée: informations de l'employe
+	En entrÃ©e: informations de l'employe
 	En sortie: tableau employe
 	*/
 		function lireEmploye($idEmploye)
 		{
 			$idEmploye=mysql_real_escape_string($idEmploye);
 			
-			//vérifier que l'espace existe dans la bdd
+			//vÃ©rifier que l'espace existe dans la bdd
 			if( $idEmploye != null)
 			{
-				//vérifier si l'employe existe dans la bdd (requete de sélection ) 
+				//vÃ©rifier si l'employe existe dans la bdd (requete de sÃ©lection ) 
 				$requete = mysql_query('SELECT * FROM employe where employeID='.$idEmploye) or die(mysql_error());
 				//Retourner le nombre de ligne 
 				$num=mysql_num_rows($requete);
 				if($num != null)
 				{
-					//retourner le résultat de la requete dans un tableau
+					//retourner le rÃ©sultat de la requete dans un tableau
 					$employe=mysql_fetch_assoc($requete);
 					return $employe;
 				}
@@ -101,13 +101,13 @@
 	
 	/*
 	La fonction modifierEmploye : cette fonction permet de modifier un employe, 
-	En entrée: informations employe
-	En sortie: message de succès
+	En entrÃ©e: informations employe
+	En sortie: message de succÃ©s
 	*/
 		function modifierEmploye($idEmploye,$nomEmploye, $prenomEmploye, $emailEmploye,$telMobileEmploye,$telFixeEmploye,$telFaxEmploye,$civiliteEmploye)
 		{
 			$idEmploye=mysql_real_escape_string($idEmploye);
-			$verifierEmploye=mysql_query("SELECT * FROM employe WHERE employeID=$idEmploye") or die(mysql_error());
+			$verifierEmploye=mysql_query("SELECT * FROM employe WHERE employeID='$idEmploye'") or die(mysql_error());
 			$existeEmploye=mysql_num_rows($verifierEmploye);
 			if($existeEmploye!=0)
 			{
@@ -120,34 +120,34 @@
 				$civiliteEmploye=mysql_real_escape_string($civiliteEmploye);
 					
 								
-					if($nomEmploye=='' or $prenomEmploye=='' or $emailEmploye=='') // vérification des entrées (obligatoire)
+					if($nomEmploye=='' or $prenomEmploye=='' or $emailEmploye=='') // vÃ©rification des entrÃ©es (obligatoire)
 					{
 						echo("Veuillez remplir les champs obligatoires!"); 
 						exit;
 					}
 					else
 					{		
-						$verifierEmploye=mysql_query("SELECT * FROM employe WHERE employeID <> $idEmploye and nom='$nomEmploye' and prenom='$prenomEmploye' and email='$emailEmploye'") or die(mysql_error());
+						$verifierEmploye=mysql_query("SELECT * FROM employe WHERE employeID !='$idEmploye' and nom='$nomEmploye' and prenom='$prenomEmploye' and email='$emailEmploye'") or die(mysql_error());
 						$existeEmploye=mysql_num_rows($verifierEmploye);
 						if( $existeEmploye != null)
 						{
-							echo("Cet employe existe déja dans la base des donnees");
+							echo("Cet employe existe dÃ©ja dans la base des donnees");
 						}
 						else
 						{
 							$requetemodifierEmploye= mysql_query("
 							UPDATE employe
 							SET nom='$nomEmploye', prenom='$prenomEmploye', email= '$emailEmploye', telMobile= '$telMobileEmploye', telFixe= '$telFixeEmploye', telFax= '$telFaxEmploye',civilite= '$civiliteEmploye'
-							WHERE employeID = $idEmploye 		
+							WHERE employeID = '$idEmploye' 		
 							") or die('Error Requete modification'.mysql_error());
-							if($requetemodifierEmploye) // vérifier ajout de l'employe 
+							if($requetemodifierEmploye) // vÃ©rifier ajout de l'employe 
 							{
 								return $idEmploye;
 							}
 							else
 							{
-								// erreur Employe non ajouté 
-								trigger_error("lien Employe non ajouté ");
+								// erreur Employe non ajoutÃ©
+								trigger_error("lien Employe non ajoutÃ© ");
 							}
 						}
 					
@@ -161,8 +161,8 @@
 	
 	/*
 	La fonction supprimerEmploye : cette fonction permet de supprimer un employe, 
-	En entrée: id Employe
-	En sortie: message succès
+	En entrÃ©e: id Employe
+	En sortie: message succÃ©s
 	*/
 		function supprimerEmploye($idEmploye)
 		{
@@ -181,8 +181,8 @@
 					{
 							//Requete suppimer l'espace 
 							$delete=mysql_query('DELETE FROM employe WHERE employeID='.$idEmploye);
-							//retourner un message de succès 
-							$message="Employe supprimé";
+							//retourner un message de succÃ©s 
+							$message="Employe supprimÃ©";
 							return $message;
 					}
 					//sinon le nombre de ligne ==0

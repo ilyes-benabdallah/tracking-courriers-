@@ -1,13 +1,15 @@
+<?php ob_start(); ?>
 <?php
-// On démarre la session
+// On dÃ©marre la session
 session_start ();
 
-// On détruit les variables de notre session
+// On dÃ©truit les variables de notre session
 session_unset ();
 
-// On détruit notre session
+// On dÃ©truit notre session
 session_destroy ();
 
 // On redirige le visiteur vers la page d'accueil
 header ('location: login.php');
 ?>
+<?php ob_flush(); ?>

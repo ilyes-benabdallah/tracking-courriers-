@@ -1,4 +1,4 @@
-﻿
+
         </div>
         <!-- END MAIN CONTENT -->
 
@@ -34,8 +34,8 @@
     <script src='assets/plugins/fullcalendar/fullcalendar.min.js'></script>
     <script src="assets/plugins/simple-weather/jquery.simpleWeather.min.js"></script>
     <script src="assets/plugins/google-maps/markerclusterer.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="assets/plugins/google-maps/gmaps.js"></script>
+    <!--script src="http://maps.google.com/maps/api/js?sensor=true"></script-->
+    <!--script src="assets/plugins/google-maps/gmaps.js"></script-->
     <script src="assets/plugins/charts-flot/jquery.flot.js"></script>
     <script src="assets/plugins/charts-flot/jquery.flot.animator.min.js"></script>
     <script src="assets/plugins/charts-flot/jquery.flot.resize.js"></script>
@@ -70,10 +70,10 @@
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
     <script src="assets/plugins/datetimepicker/jquery.datetimepicker.js"></script>
     <script src="assets/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-    <!--script src="assets/plugins/pickadate/picker.js"></script>
-    <script src="assets/plugins/pickadate/picker.date.js"></script>
-    <script src="assets/plugins/pickadate/picker.time.js"></script>
-    <script src="assets/plugins/icheck/custom.js"></script-->
+    <!--script src="assets/plugins/pickadate/picker.js"></script-->
+    <!--script src="assets/plugins/pickadate/picker.date.js"></script-->
+    <!--script src="assets/plugins/pickadate/picker.time.js"></script-->
+    <!--script src="assets/plugins/icheck/custom.js"></script-->
  
     <script src="assets/js/form.js"></script>
     <!-- END  PAGE LEVEL SCRIPTS -->

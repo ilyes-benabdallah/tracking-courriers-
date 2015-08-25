@@ -1,4 +1,5 @@
 ﻿<div class="bd-blue" style="text-align:left;">
+	<?php echo $_GET['id']; ?>
 	Abdessamad MAHDAD <br>
 	EUREQUAT ALGERIE <br>
 	bois des cars 03 Villa N° 183 <br>
