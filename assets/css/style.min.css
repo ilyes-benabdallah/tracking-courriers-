@@ -3,7 +3,7 @@
     src: url('../fonts/code39.ttf');
 	}
 	
-html{font-size:100%;height:100%}
+html{font-size:100%;/*height:100%*/}
 body{font-family:'Open Sans',verdana,arial;font-weight:300;/*margin-top:40px;*/ margin-top:68px;background:#dfe5e9}
 #wrapper{width:100%}
 #main-content{width:100%;padding:10px 20px;background-color:#dfe5e9}

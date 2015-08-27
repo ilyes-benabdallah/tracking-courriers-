@@ -23,97 +23,97 @@ if(isset($_GET['code']))
 		$commandeID = $actif['commandeID'];
 		
 ?>
-<script type="text/javascript">
 
-    function PrintElem(elem)
-    {
-        Popup($(elem).html());
-    }
+<div id="contenuImprimer" >
+		<div class="row" style=" background-color: white;">
+			<div class="" style=" border:1px solid #000; text-align:center;">
+				
+				
+				<h1>Eurequat Algerie</h1>
 
-    function Popup(data) 
-    {
-        var mywindow = window.open('', 'my div', 'height=400,width=600');
-        mywindow.document.write('<html><head><title>my div</title>');
-        /*optional stylesheet*/ //mywindow.document.write('<link rel="stylesheet" href="main.css" type="text/css" />');
-        mywindow.document.write('</head><body >');
-        mywindow.document.write(data);
-        mywindow.document.write('</body></html>');
-
-        mywindow.document.close(); // necessary for IE >= 10
-        mywindow.focus(); // necessary for IE >= 10
-
-        mywindow.print();
-        mywindow.close();
-
-        return true;
-    }
-
-</script>
-<div id="contenuImprimer">
-	<div class="row" style=" background-color: white;">
-		<div class="col-md-6" style=" border:1px solid #000;">
-			<br>
-			<?php echo $codeProduit;?> <br>
-			<?php echo $infoProduit;?> <br>
-			<?php echo $expediteurID;?> <br>
-			<?php echo $distinataireID;?> <br>
-			<?php echo $dateEnvoi;?> <br>
-			<?php echo $dateEnvoi;?> <br>
-			<img src="barcode.php?text=<?php echo $codeProduit;?>&size=40" alt="testing" />
-			<br>
-			<br>
+				<img src="assets/img/logoe.png" alt="testing" />
+				<p>Le spécialiste de l'identification et de la traçabilité</p>
+				<br>
+			</div>
+			
 		</div>
-		<div class="col-md-6" style=" border:1px solid #000;">
-			<br>
-			<?php echo $codeProduit;?> <br>
-			<?php echo $infoProduit;?> <br>
-			<?php echo $expediteurID;?> <br>
-			<?php echo $distinataireID;?> <br>
-			<?php echo $dateEnvoi;?> <br>
-			<?php echo $dateEnvoi;?> <br>
-			<img src="barcode.php?text=<?php echo $codeProduit;?>&size=40" alt="testing" />
-			<br>
-			<br>
-		</div>
-	</div>
+		
+		<div class="row" style=" background-color: white;">
+			<div class="col-md-6" style=" border:1px solid #000; float:left; width:50%;">
+				
+				<h1 style="text-align:center;">Expediteur</h1>
+					<input type="hidden" id="expediteur" value="<?php echo $expediteurID?>">
+					<div id="infoExpediteur"></div>
 
-	<br>
-	<div class="row" style=" background-color: white;">
-		<div class="col-md-6" style=" border:1px solid #000;">
-			<br>
-			<?php echo $codeProduit;?> <br>
-			<?php echo $infoProduit;?> <br>
-			<?php echo $expediteurID;?> <br>
-			<?php echo $distinataireID;?> <br>
-			<?php echo $dateEnvoi;?> <br>
-			<?php echo $dateEnvoi;?> <br>
-			<img src="barcode.php?text=<?php echo $codeProduit;?>&size=40" alt="testing" />
-			<br>
-			<br>
+				
+				<br>
+			</div>
+			<div class="col-md-6" style=" border:1px solid #000; float:right; width:50%;">
+				
+				<h1 style="text-align:center;">Distinataire</h1>
+				<input type="hidden" id="distinataire" value="<?php echo $distinataireID?>">
+				<div id="infoDistinataire"></div>
+				
+				<br>
+			</div>
 		</div>
-		<div class="col-md-6" style=" border:1px solid #000;">
-			<br>
-			<?php echo $codeProduit;?> <br>
-			<?php echo $infoProduit;?> <br>
-			<?php echo $expediteurID;?> <br>
-			<?php echo $distinataireID;?> <br>
-			<?php echo $dateEnvoi;?> <br>
-			<?php echo $dateEnvoi;?> <br>
-			<img src="barcode.php?text=<?php echo $codeProduit;?>&size=40" alt="testing" />
-			<br>
-			<br>
-		</div>
-	</div>
 
-	<br>
+	
+			<script>
+				$(document).ready(function(){
+									var id = $("#expediteur").val();
+									var id2 = $("#distinataire").val();
+									$("#infoExpediteur").load("load/expedier/infoContact.php?id="+id);
+									$("#infoDistinataire").load("load/expedier/infoContact.php?id="+id2);
+								
+							});
+			</script>
+		
+		
+		<div class="row" style=" background-color: white;">
+			<div class="" style=" border:1px solid #000; text-align:center;">
+				<br>
+				
+				<?php echo $infoProduit;?> <br>
+				<?php echo $dateEnvoi;?> <br>
+				 <br>
+
+				
+				<?php echo $codeProduit;?> <br>
+				<img src="barcode.php?text=<?php echo $codeProduit;?>&size=40" alt="testing" />
+				<br>
+				<br>
+			</div>
+			
+		</div>
+
+		<br>
+	
 </div>
-<div id="printable">
-Your Content
+
+<!--button class="print" onclick="fctprint();" id="print"> Imprimer étiquette </button-->
+<div class="" style="    " >
+	
+	<button style=" width: 280px;     margin-left: 40%;" type="button" class=" print btn btn-lg btn-block btn-info active" onclick="fctprint();" id="print"><i class="fa fa-print pull-left"></i>Imprimer étiquette</button>
+	
 </div>
-<button class="print" onclick="print('index.php');"> Print this </button>
+<!--a href="newPrint.php?code=<?php echo $idActif;?>" target="_blank"> imprimer</a-->
+	<script>
+	function fctprint()
+	{
+		$("#sidebar").css("visibility", 'hidden');
+		$(".navbar ").css("visibility", 'hidden');
+		$(".print ").css("visibility", 'hidden');
 
+		window.print();
+		
+		$("#sidebar").css("visibility", 'visible');
+		$(".navbar ").css("visibility", 'visible');
+		$(".print ").css("visibility", 'visible');
+	}
+	</script>
 
-<?php
+<?php //sidebar
 	}
 	else echo "Cet actif n'existe pas";
 
@@ -123,3 +123,4 @@ else echo "Veillez selectionner un actif";
 include('footer.php');
 ?>
 <?php ob_flush(); ?>
+
